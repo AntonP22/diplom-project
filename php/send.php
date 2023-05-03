@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
     // Проверяем корректность заполнения полей формы
     if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
-        $to = 'apanov222@gmail.com'; // Адрес, на который будет отправлено письмо
+        $to = 'annasonara@yandex.ru'; // Адрес, на который будет отправлено письмо
         $name = htmlspecialchars($_POST['name']); // Обезопасим данные от XSS-атак
         $email = htmlspecialchars($_POST['email']);
         $subject = htmlspecialchars($_POST['subject']);
