@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@200;300;400;500;600;700&display=swap"); */
-
 :root {
   --bg-black-900: #f2f2fc;
   --bg-black-100: #fdf9ff;
@@ -7,7 +5,7 @@
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
 }
-body.dark{
+body.dark {
   --bg-black-900: #151515;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
@@ -49,18 +47,18 @@ ul {
   bottom: 0;
   z-index: 0;
   overflow-y: auto;
-  overflow-x: hidden ;
+  overflow-x: hidden;
   transition: all 0.3s ease;
 }
-.section.back-section{
+.section.back-section {
   z-index: 1;
 }
-.section.active{
+.section.active {
   z-index: 2;
   opacity: 1;
   animation: slideSection 1s ease;
 }
-@keyframes slideSection{
+@keyframes slideSection {
   0% {
     transform: translateX(100%);
   }
@@ -154,7 +152,6 @@ ul {
   word-spacing: -5px;
   transition: all 0.3s ease;
 }
-
 .aside .logo {
   position: absolute;
   top: 50px;
@@ -173,7 +170,6 @@ ul {
   font-family: "Pacifico", cursive;
   font-size: 2.7rem;
 }
-
 .aside .logo a::before {
   content: "";
   position: absolute;
@@ -194,7 +190,7 @@ ul {
   top: 0;
   right: 0;
 }
-.aside .nav-toggler{
+.aside .nav-toggler {
   height: 40px;
   width: 45px;
   border: 1px solid var(--bg-black-50);
@@ -217,7 +213,7 @@ ul {
   display: inline-block;
   position: relative;
 }
-.aside .nav-toggler.open span{
+.aside .nav-toggler.open span {
   background-color: transparent;
 }
 .aside .nav-toggler span::before {
@@ -229,7 +225,7 @@ ul {
   top: -6px;
   left: 0;
 }
-.aside .nav-toggler.open span::before{
+.aside .nav-toggler.open span::before {
   transform: rotate(45deg);
   top: 0;
 }
@@ -242,7 +238,7 @@ ul {
   top: 6px;
   left: 0;
 }
-.aside .nav-toggler.open span::after{
+.aside .nav-toggler.open span::after {
   transform: rotate(-45deg);
   top: 0;
 }
@@ -325,7 +321,6 @@ ul {
   border-left: 10px solid var(--skin-color);
   left: 5%;
   top: -10%;
-  
 }
 .home .home-img img {
   margin: auto;
@@ -333,12 +328,10 @@ ul {
   height: 400px;
   padding-left: 50px;
   padding-right: 50px;
-  
 }
-.home .home-info .hire-me{
+.home .home-info .hire-me {
   margin-bottom: 60px;
 }
-
 
 /* Обо мне */
 
@@ -368,7 +361,6 @@ ul {
   font-size: 1.1rem;
   color: var(--skin-color);
 }
-
 .about .about-content .personal-info {
   flex: 0 0 60%;
   max-width: 60%;
@@ -396,7 +388,6 @@ ul {
   margin-top: 30px;
 }
 .about .about-content .personal-info .buttons .btn {
-  
   margin-top: 10px;
 }
 .about .about-content .skills {
@@ -454,11 +445,9 @@ ul {
 .about .about-content .timeline-box {
   flex: 0 0 100%;
   max-width: 100%;
-  
 }
 .about .about-content .timeline-box-2 {
   padding-top: 65px;
-
 }
 .about .about-content .timeline {
   background-color: var(--bg-black-100);
@@ -507,7 +496,6 @@ ul {
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 15px;
-  
   color: var(--text-black-900);
 }
 .about .about-content .timeline .timeline-text {
@@ -524,8 +512,8 @@ ul {
 }
 .service .service-item {
   margin-bottom: 30px;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 .service .service-item .service-item-inner {
   background-color: var(--bg-black-100);
@@ -602,6 +590,9 @@ ul {
   width: 100%;
   display: block;
 }
+.portfolio .portfolio-item-inner:hover {
+  transform: scale(1.15);
+}
 
 /*модальное окно в портфолио*/
 .modal {
@@ -630,7 +621,6 @@ ul {
 .modal-container {
   position: relative;
 }
-
 .modal-navigation {
   position: absolute;
   top: 50%;
@@ -640,19 +630,15 @@ ul {
   color: #fff;
   transition: opacity 0.3s ease-in-out;
 }
-
 .modal-navigation:hover {
   opacity: 0.7;
 }
-
 .modal-prev {
-  left: 10px;
+  left: -20px;
 }
-
 .modal-next {
-  right: 10px;
+  right: -20px;
 }
-
 
 /* контакты */
 .contact-title {
@@ -676,7 +662,6 @@ ul {
 }
 .contact .contact-info-item .icon {
   display: block;
-  
 }
 .contact .contact-info-item .icon .fa {
   font-size: 1.5rem;
@@ -709,7 +694,6 @@ ul {
 }
 .contact .contact-form .from-item {
   margin-bottom: 30px;
-  
 }
 .contact .contact-form .from-item .form-control {
   width: 100%;
@@ -735,37 +719,36 @@ ul {
   margin-right: 50px;
 }
 
-.contact .contact-form .submit-info{
+.contact .contact-form .submit-info {
   display: flex;
   align-items: center;
 }
-#info{
+#info {
   color: var(--skin-color);
 }
 
-
 /*медиа запросы*/
 @media (max-width: 1199px) {
-  .section .container{
+  .section .container {
     padding-top: 70px;
   }
   .aside {
     left: -270px;
   }
-  .aside.open{
+  .aside.open {
     left: 0;
   }
-  .aside .nav-toggler{
+  .aside .nav-toggler {
     display: flex;
     left: 30px;
   }
-  .aside .nav-toggler.open{
+  .aside .nav-toggler.open {
     left: 300px;
   }
-  .section{
+  .section {
     left: 0;
   }
-  .section.open{
+  .section.open {
     left: 270px;
   }
   .about .about-content .personal-info .info-item p span {
@@ -776,19 +759,19 @@ ul {
 @media (max-width: 991px) {
   .contact .contact-info-item,
   .portfolio .portfolio-item,
-  .service .service-item{
+  .service .service-item {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .home .home-info{
+  .home .home-info {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .home .home-img{
+  .home .home-img {
     display: none;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
@@ -796,7 +779,7 @@ ul {
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
-  .about .about-content .personal-info{
+  .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
   }
