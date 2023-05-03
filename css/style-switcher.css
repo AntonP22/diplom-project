@@ -70,10 +70,10 @@
   border: 2px solid var(--skin-color);
 }
 .style-switcher .color-1{
-  background: #FA5B0F;
+  background: #1854b4;
 }
 .style-switcher .color-2{
-  background: #1854b4;
+  background: #FA5B0F;
 }
 .style-switcher .color-3{
   background: #37b182;
