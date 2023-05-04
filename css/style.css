@@ -405,7 +405,7 @@ ul {
   font-weight: 600;
   font-size: 1rem;
   color: var(--text-black-900);
-  text-transform: capitalize;
+  
 }
 .about .about-content .skills .skill-item .progress {
   background-color: var(--bg-black-50);
@@ -553,7 +553,7 @@ ul {
   margin-bottom: 15px;
   color: var(--text-black-900);
   font-weight: 700;
-  text-transform: capitalize;
+  
 }
 .service .service-item .service-item-inner p {
   font-size: 1rem;
@@ -605,7 +605,6 @@ ul {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .modal-content {
   position: absolute;
   top: 50%;
@@ -613,7 +612,6 @@ ul {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .modal-image {
   max-width: 100%;
   max-height: 100%;
